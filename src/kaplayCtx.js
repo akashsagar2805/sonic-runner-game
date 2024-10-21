@@ -7,7 +7,7 @@ const k = kaplay({
     background: [0, 0, 0],
     global: false,
     touchToMouse: true,
-    button: {
+    buttons: {
         jump: {
             keyboard: ["space"],
             mouse: "left",

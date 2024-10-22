@@ -5,11 +5,11 @@ export default function gameover(citySfx) {
   let bestScore = k.getData("best-score");
   const currentScore = k.getData("current-score");
 
-  const rankGrades = ["F", "E", "D", "C", "B", "A", "S"];
+  const rankGrades = ["Bad", "Okay", "Good", "Great", "Best", "Hero", "Legend"];
   const rankValues = [50, 80, 100, 200, 300, 400, 500];
 
-  let currentRank = "F";
-  let bestRank = "F";
+  let currentRank = "Bad";
+  let bestRank = "Bad";
   for (let i = 0; i < rankValues.length; i++) {
     if (rankValues[i] < currentScore) {
       currentRank = rankGrades[i];
@@ -58,7 +58,7 @@ export default function gameover(citySfx) {
   ]);
 
   bestRankBox.add([
-    k.text(bestRank, { font: "mania", size: 100 }),
+    k.text(bestRank, { font: "mania", size: 80  }),
     k.anchor("center"),
   ]);
 
@@ -72,7 +72,7 @@ export default function gameover(citySfx) {
   ]);
 
   currentRankBox.add([
-    k.text(currentRank, { font: "mania", size: 100 }),
+    k.text(currentRank, { font: "mania", size: 80 }),
     k.anchor("center"),
   ]);
 

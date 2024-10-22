@@ -4,7 +4,7 @@
 
 This is a JavaScript-based game designed for entertainment and engagement. The game can be set up and run locally by following the instructions below.
 
-Watch the demo video [here](https://www.awesomescreenshot.com/video/32809489?key=6a94759d60cba6b0ebbdd0ae4bdfddf6).
+[![Video Thumbnail](https://github.com/USERNAME/REPOSITORY/assets/IMAGE_PATH)](https://www.awesomescreenshot.com/video/32809489?key=6a94759d60cba6b0ebbdd0ae4bdfddf6)
 
 ## Features
 - Fun and interactive gameplay

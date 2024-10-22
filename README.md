@@ -1,5 +1,5 @@
 
-#About the Game
+About the Game
 This is a JavaScript-based game designed for entertainment and engagement. The game can be set up and run locally by following the instructions below.
 
 Tutorial Reference

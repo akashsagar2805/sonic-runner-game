@@ -4,7 +4,7 @@
 
 This is a JavaScript-based game designed for entertainment and engagement. The game can be set up and run locally by following the instructions below.
 
-[![image](https://github.com/USERNAME/REPOSITORY/assets/IMAGE_PATH)](https://www.awesomescreenshot.com/video/32809489?key=6a94759d60cba6b0ebbdd0ae4bdfddf6)
+[My items - Awesome Screenshot (1).webm](https://github.com/user-attachments/assets/28a0916d-bb1b-4a64-afb3-5e0f548eeb70)
 
 ## Features
 - Fun and interactive gameplay

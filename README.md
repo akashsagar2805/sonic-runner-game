@@ -1,12 +1,11 @@
-
-About the Game
+##About the Game
 This is a JavaScript-based game designed for entertainment and engagement. The game can be set up and run locally by following the instructions below.
 
-Tutorial Reference
+##Tutorial Reference
 This project was created by following a tutorial from the JSLegend YouTube channel.
 https://www.youtube.com/watch?v=wfRvhPm5qFc
 
-Libraries Used
+##Libraries Used
 KAPLAY.js: An HTML5 game library for JavaScript and TypeScript. Free & Open Source. KAPLAY.js is designed to make it easy and fun to create games and is the successor of Kaboom, from which I have learned many things.
 https://kaplayjs.com/
 

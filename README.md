@@ -4,11 +4,11 @@
 
 This is a JavaScript-based game designed for entertainment and engagement. The game can be set up and run locally by following the instructions below.
 
+https://www.awesomescreenshot.com/video/32809489?key=6a94759d60cba6b0ebbdd0ae4bdfddf6
+
 ## Features
 - Fun and interactive gameplay
-- Responsive design
-- Real-time leaderboards (if applicable)
-- [Add any additional feature here]
+- Real-time leaderboards 
 
 ## Demo
 
@@ -28,8 +28,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/akashsagar2805/sonic-runner-game
+    cd sonic-runner-game
     ```
 
 2. Install the dependencies:

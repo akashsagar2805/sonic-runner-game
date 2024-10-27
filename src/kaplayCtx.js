@@ -1,8 +1,8 @@
 import kaplay from "kaplay";
 
 const k = kaplay({
-    width: 1920,
-    height: 1080,
+    width: 3500,
+    height: 1800,
     letterbox: true,
     background: [0, 0, 0],
     global: false,

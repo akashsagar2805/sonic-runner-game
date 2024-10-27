@@ -6,32 +6,32 @@ import { makeRing } from "../entities/ring";
 export default function game() {
     k.setGravity(3100);
     const citySfx = k.play("city", { volume: 0.2, loop: true });
-    const bgPieceWidth = 1920;
+    const bgPieceWidth = 2304;
     const bgPieces = [
-        k.add([k.sprite("chemical-bg"), k.pos(0, 0), k.scale(2), k.opacity(0.8)]),
+        k.add([k.sprite("background"), k.pos(0, 0), k.scale(2), k.opacity(0.5)]),
         k.add([
-            k.sprite("chemical-bg"),
+            k.sprite("background"),
             k.pos(bgPieceWidth * 2, 0),
             k.scale(2),
-            k.opacity(0.8),
+            k.opacity(0.5),
         ]),
     ];
 
     const platformWidth = 1280;
     const platforms = [
-        k.add([k.sprite("platforms"), k.pos(0, 450), k.scale(4)]),
-        k.add([k.sprite("platforms"), k.pos(platformWidth * 4, 450), k.scale(4)]),
+        k.add([k.sprite("platforms"), k.pos(0, 900), k.scale(4)]),
+        k.add([k.sprite("platforms"), k.pos(platformWidth * 4, 900), k.scale(4)]),
     ];
 
     const scoreText = k.add([
-        k.text("SCORE : 0", { font: "mania", size: 72 }),
+        k.text("SCORE : 0", { font: "mania", size: 96 }),
         k.pos(20, 20),
     ]);
 
     let score = 0;
     let scoreMultiplier = 0;
 
-    const sonic = makeSonic(k.vec2(200, 745));
+    const sonic = makeSonic(k.vec2(400, 745));
     sonic.setControls();
     sonic.setEvents();
     sonic.onCollide("enemy", (enemy) => {
@@ -75,7 +75,7 @@ export default function game() {
     });
 
     const spawnMotoBug = () => {
-        const motobug = makeMotobug(k.vec2(1950, 773));
+        const motobug = makeMotobug(k.vec2(1950, 1230));
         motobug.onUpdate(() => {
             if (gameSpeed < 3000) {
                 motobug.move(-(gameSpeed + 300), 0);
@@ -96,7 +96,7 @@ export default function game() {
     spawnMotoBug();
 
     const spawnRing = () => {
-        const ring = makeRing(k.vec2(1950, 773));
+        const ring = makeRing(k.vec2(1950, 1230));
         ring.onUpdate(() => {
             ring.move(-gameSpeed, 0);
         });
@@ -113,10 +113,10 @@ export default function game() {
     spawnRing();
 
     k.add([
-        k.rect(1920, 300),
+        k.rect(2304, 300),
         k.opacity(0),
         k.area(),
-        k.pos(0, 832),
+        k.pos(0, 1280),
         k.body({ isStatic: true }),
     ]);
 
@@ -134,11 +134,11 @@ export default function game() {
         bgPieces[1].moveTo(bgPieces[1].pos.x, -sonic.pos.y / 10 - 50);
 
         if (platforms[1].pos.x < 0) {
-            platforms[0].moveTo(platforms[1].pos.x + platformWidth * 4, 450);
+            platforms[0].moveTo(platforms[1].pos.x + platformWidth * 4, 900);
             platforms.push(platforms.shift());
         }
 
         platforms[0].move(-gameSpeed, 0);
-        platforms[1].moveTo(platforms[0].pos.x + platformWidth * 4, 450);
+        platforms[1].moveTo(platforms[0].pos.x + platformWidth * 4, 900);
     });
 }

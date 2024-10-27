@@ -9,7 +9,9 @@ https://www.youtube.com/watch?v=wfRvhPm5qFc
 KAPLAY.js: An HTML5 game library for JavaScript and TypeScript. Free & Open Source. KAPLAY.js is designed to make it easy and fun to create games and is the successor of Kaboom, from which I have learned many things.
 https://kaplayjs.com/
 
-[My items - Awesome Screenshot (1).webm](https://github.com/user-attachments/assets/28a0916d-bb1b-4a64-afb3-5e0f548eeb70)
+[Vite App.webm](https://github.com/user-attachments/assets/4951aa59-4d24-4507-800d-e95896b18fbb)
+
+
 
 ## Features
 - Fun and interactive gameplay

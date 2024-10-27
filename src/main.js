@@ -4,7 +4,7 @@ import game from "./scenes/game";
 import gameover from "./scenes/gameover";
 import mainMenu from "./scenes/mainMenu";
 
-k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
+k.loadSprite("background", "graphics/background.png");
 k.loadSprite("platforms", "graphics/platforms.png");
 k.loadSprite("sonic", "graphics/sonic.png", {
     sliceX: 8, // how many sprites are in the X axis
